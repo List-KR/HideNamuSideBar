@@ -1,0 +1,23 @@
+// ==UserScript==
+// @name         HideNamuSideBar
+// @encoding     utf-8
+// @namespace    https://github.com/List-KR/HideNamuSideBar
+// @homepageURL  https://github.com/List-KR/HideNamuSideBar
+// @supportURL   https://github.com/List-KR/HideNamuSideBar/issues
+// @updateURL    https://cdn.jsdelivr.net/gh/List-KR/HideNamuSideBar@latest/HideNamuSideBar.user.js
+// @downloadURL  https://cdn.jsdelivr.net/gh/List-KR/HideNamuSideBar@latest/HideNamuSideBar.user.js
+// @license      MIT
+//
+// @version      1.0.0
+// @author       PiQuark6046 and contributors
+//
+// @match        https://namu.wiki/*
+//
+// @description        HideNamuSideBar hides all sidebars at NamuWiki.
+// @description:ko     HideNamuSideBar는 나무위키에 있는 모든 사이드바를 숨깁니다.
+//
+// @grant        unsafeWindow
+// @run-at       document-start
+// @inject-into  page
+// ==/UserScript==
+// Used libraries:
