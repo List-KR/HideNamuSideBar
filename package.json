@@ -1,0 +1,39 @@
+{
+  "name": "hidenamusidebar",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm bundle",
+    "bundle": "esbuild sources/src/index.ts --bundle --minify --define:global=window --inject:./sources/esbuild.inject.ts --banner:js=\"$(cat ./sources/banner.txt)\" --target=es2022,chrome109,safari16,firefox115 --outfile=./HideNamuSideBar.user.js",
+    "debug": "esbuild sources/src/index.ts --bundle --define:global=window --inject:./sources/esbuild.inject.ts --banner:js=\"$(cat ./sources/banner.txt)\" --target=es2022,chrome109,safari16,firefox115 --outfile=./HideNamuSideBar-debug.user.js",
+    "lint": "tsc && eslint sources --ext .ts"
+  },
+  "keywords": [],
+  "author": {
+    "name": "PiQuark6046",
+    "email": "piquark6046@proton.me",
+    "url": "https://github.com/PiQuark6046"
+  },
+  "contributors": [
+    {
+      "name": "Adguard Software Ltd.",
+      "url": "https://adguard.com/"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.12.6",
+    "multithread-array": "^2.0.0",
+    "p-limit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
+    "pnpm": "^8.15.6",
+    "typescript": "^5.4.4",
+    "typescript-eslint": "^7.6.0"
+  }
+}
