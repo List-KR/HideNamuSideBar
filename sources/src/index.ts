@@ -26,7 +26,7 @@ const HideElements = (TargetElements: HTMLElement[]) => {
 }
 
 const HideFunction = async () => {
-  const ElementsInArticle = Array.from(document.querySelectorAll('main > div[class]:not([class=" "]) div[class*=" "] ~ div[class]:not([class*=" "]) ~ div[class*=" "]'))
+  const ElementsInArticle = Array.from(document.querySelectorAll('div[class]:not([class=" "]) div[class*=" "] ~ div[class]:not([class*=" "]) ~ div[class*=" "]'))
   const PLimitInstance = PLimit(Cocurrent)
   const PLimitJobs: Promise<HTMLElement[]>[] = []
   let TargetedElements: HTMLElement[] = []
